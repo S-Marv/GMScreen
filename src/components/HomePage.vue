@@ -44,8 +44,8 @@ function save(tabs, scriptIndex){
 	<div class="home-bar">
 		<Toolbar>
 			<template #start> 
-				<ImageButton src="/arrow.svg" height="30px" rotation="180deg"/>
-				<ImageButton src="/arrow.svg" height="30px"/>
+				<ImageButton src="arrow.svg" height="30px" rotation="180deg"/>
+				<ImageButton src="arrow.svg" height="30px"/>
 
 			</template>
 			<template #center>
@@ -57,8 +57,8 @@ function save(tabs, scriptIndex){
 				</IconField>
 			</template>
 			<template #end> 
-				<ImageButton disabled src="/delete.png" height="30px"/>
-				<ImageButton class="enabled" src="/add.svg" height="30px" @click="visible=true; refresh(tabs)"/>
+				<ImageButton disabled src="delete.png" height="30px"/>
+				<ImageButton class="enabled" src="add.svg" height="30px" @click="visible=true; refresh(tabs)"/>
 
 			</template>
 		</Toolbar>
@@ -73,7 +73,7 @@ function save(tabs, scriptIndex){
 
 				<p>Icon</p>
 				<div class="right-box">
-					<button class="dialog-button enabled" @click="data.image='/script.png'" ><img src="/browse.svg" height=35px></img></button>
+					<button class="dialog-button enabled" @click="data.image='script.png'" ><img src="browse.svg" height=35px></img></button>
 					<img :src="data.image? data.image : '/Placeholder.svg'" height="35px" style="background-color: gray;">
 
 				</div>
@@ -90,7 +90,7 @@ function save(tabs, scriptIndex){
 	<div style="padding-top: 6rem; display: grid; width: 100%; grid-template-columns: auto auto auto auto auto;">
 		<File icon="/folder.svg" name="maps"/>
 		<File icon="/table.png" name="Tables.sc"/>
-		<File v-if="scriptIndex[0] >0" icon="/script.png" :name="tabs[scriptIndex[0]].name + '.sc'"/>
+		<File v-if="scriptIndex[0] >0" icon="script.png" :name="tabs[scriptIndex[0]].name + '.sc'"/>
 
 
 	</div>
