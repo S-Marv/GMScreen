@@ -88,8 +88,8 @@ function save(tabs, scriptIndex){
         </Dialog>
 	</div>
 	<div style="padding-top: 6rem; display: grid; width: 100%; grid-template-columns: auto auto auto auto auto;">
-		<File icon="/folder.svg" name="maps"/>
-		<File icon="/table.png" name="Tables.sc"/>
+		<File icon="folder.svg" name="maps"/>
+		<File icon="table.png" name="Tables.sc"/>
 		<File v-if="scriptIndex[0] >0" icon="script.png" :name="tabs[scriptIndex[0]].name + '.sc'"/>
 
 
