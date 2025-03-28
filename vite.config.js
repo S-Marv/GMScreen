@@ -11,7 +11,7 @@ export default defineConfig({
     vueDevTools(),
   ],
   resolve: {
-    base: '/<REPO>/',
+    base: '/GMScreen/',
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
