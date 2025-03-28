@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "https://S-Marv.github.io/GMScreen",
+  base: '/<REPO>/',
   plugins: [
     vue(),
     vueDevTools(),
