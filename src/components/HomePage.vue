@@ -73,8 +73,8 @@ function save(tabs, scriptIndex){
 
 				<p>Icon</p>
 				<div class="right-box">
-					<button class="dialog-button enabled" @click="data.image='script.png'" ><img src="browse.svg" height=35px></img></button>
-					<img :src="data.image? data.image : '/Placeholder.svg'" height="35px" style="background-color: gray;">
+					<button class="dialog-button enabled" @click="data.image='script.png'" ><img src="/browse.svg" height=35px></img></button>
+					<img :src="data.image? data.image : 'Placeholder.svg'" height="35px" style="background-color: gray;">
 
 				</div>
 
