@@ -1,9 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import MainPage from './components/MainPage.vue'
 </script>
 
 <template>
-  <RouterView />
+  <MainPage/>
 </template>
 
 <style >
